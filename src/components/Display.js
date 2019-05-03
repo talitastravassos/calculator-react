@@ -7,7 +7,7 @@ const Display = props => {
     const { result } = useContext(CalculatorContext)
 
   return (
-    <div className="result">
+    <div id="display" className="result">
         <p>{result}</p>
     </div>
   )

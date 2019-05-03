@@ -8,7 +8,7 @@ export default class CalculatorProvider extends Component {
         super(props);
 
         this.state = {
-            result: ""
+            result: "0"
         }
     }
     
@@ -21,13 +21,12 @@ export default class CalculatorProvider extends Component {
             this.setState({
                 result: "error"
             })
-
         }
     };
 
     reset = () => {
         this.setState({
-            result: ""
+            result: 0
         })
     };
 
@@ -51,9 +50,15 @@ export default class CalculatorProvider extends Component {
         }
 
         else {
-            this.setState({
-                result: this.state.result + button
-            })
+            if (this.state.result == 0){
+                this.setState({
+                    result: button
+                })
+            } else {
+                this.setState({
+                    result: this.state.result + button
+                })
+            }
         }
     };
 
