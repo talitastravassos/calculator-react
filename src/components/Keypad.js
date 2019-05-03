@@ -1,7 +1,7 @@
-import React, { Component, useContext, useEffect, useState } from 'react';
-import CalculatorContext from '../context/calculator';
+import React, { useContext } from 'react';
+import { CalculatorContext } from '../context/Calculator';
 
-export const Keypad = () => {
+const Keypad = (props) => {
 
   const { onClick } = useContext(CalculatorContext)
 
@@ -37,4 +37,6 @@ export const Keypad = () => {
     </div>
   )
 }
+
+export default Keypad
 

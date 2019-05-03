@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 
-const CalculatorContext = React.createContext({});
+export const CalculatorContext = React.createContext({});
 
 export default class CalculatorProvider extends Component {
+    
     constructor(props){
         super(props);
 

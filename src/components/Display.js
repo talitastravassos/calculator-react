@@ -1,10 +1,17 @@
-import React, { Component, useContext, useEffect, useState } from 'react';
+import React, { useContext } from 'react';
+import { CalculatorContext } from '../context/Calculator';
 
-export const Display = (props) => {
+
+const Display = props => {
+
+    const { result } = useContext(CalculatorContext)
 
   return (
     <div className="result">
-        <p>Result</p>
+        <p>{result}</p>
     </div>
   )
 }
+
+export default Display
+
