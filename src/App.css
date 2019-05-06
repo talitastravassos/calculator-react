@@ -1,3 +1,5 @@
+
+
 .App {
   text-align: center;
 }
@@ -30,4 +32,42 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.App {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.button {
+  font-size: 1.2rem;
+  background-color: #151616;
+  color: white;
+  border: 1px solid transparent;
+}
+.button:hover {
+  background-color: #4C4C4D;
+  border: 1px solid #7A7B7C;
+}
+
+.calculator {
+  background-color: #212223;
+  color: white;
+  min-width: 300px;
+  min-height: 350px;
+  padding: 0.5em;
+  display: grid;
+  grid-gap: 0.5em;
+  border: 2px solid #151616;
+  grid-template-areas: 
+    "history history history history"
+    "display display display display"
+    "clear clear divide multiply"
+    "seven eight nine subtract"
+    "four five six add"
+    "one two three equals"
+    "zero zero decimal equals";
 }
