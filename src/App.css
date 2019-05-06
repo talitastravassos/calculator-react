@@ -53,6 +53,26 @@
   border: 1px solid #7A7B7C;
 }
 
+.keypad{
+  background-color: #212223;
+  color: white;
+  min-width: 300px;
+  min-height: 350px;
+  padding: 0.5em;
+  border: 2px solid #151616;
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; */
+  display: grid;
+  grid-gap: 0.5em;
+  grid-template-areas: 
+    "parent1 back parent2 clear"
+    "seven eight nine subtract"
+    "four five six add"
+    "one two three multiply"
+    "decimal zero divide equals";
+}
+
 .calculator {
   background-color: #212223;
   color: white;
@@ -71,3 +91,4 @@
     "one two three equals"
     "zero zero decimal equals";
 }
+
