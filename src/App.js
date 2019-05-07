@@ -10,8 +10,10 @@ class App extends Component {
   return (
     <CalculatorProvider>
       <div className="App">
-        <Display/>
-        <Keypad/>
+        <div className="calculator">
+          <Display/>
+          <Keypad/>
+        </div>
       </div>
     </CalculatorProvider>
   );
