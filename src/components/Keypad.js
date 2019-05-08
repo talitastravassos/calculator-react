@@ -7,9 +7,7 @@ const Keypad = (props) => {
 
   return (
     <div className="button keypad">
-        <button className="btn" name="(" id="parent1" onClick={e => onClick(e.target.name)}>(</button>
         <button className="btn" name="CE" id="back" onClick={e => onClick(e.target.name)}>CE</button>
-        <button className="btn" name=")" id="parent2" onClick={e => onClick(e.target.name)}>)</button>
         <button className="btn" id="clear" name="C" onClick={e => onClick(e.target.name)}>C</button><br/>
 
 
@@ -29,11 +27,15 @@ const Keypad = (props) => {
         <button className="btn" id="three" name="3" onClick={e => onClick(e.target.name)}>3</button>
         <button className="btn" id="multiply" name="*" onClick={e => onClick(e.target.name)}>x</button><br/>
 
-
+        <button className="btn" name="(" id="parent1" onClick={e => onClick(e.target.name)}>(</button>
         <button className="btn" id="decimal" name="." onClick={e => onClick(e.target.name)}>.</button>
+        <button className="btn" name=")" id="parent2" onClick={e => onClick(e.target.name)}>)</button>
+
         <button className="btn" id="zero" name="0" onClick={e => onClick(e.target.name)}>0</button>
         <button className="btn" id="divide" name="/" onClick={e => onClick(e.target.name)}>÷</button><br/>
         <button className="btn" id="equals" name="=" onClick={e => onClick(e.target.name)}>=</button>
+
+
     </div>
   )
 }

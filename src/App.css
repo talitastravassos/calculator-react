@@ -114,13 +114,12 @@
   display: grid;
   grid-gap: 0.5em;
   grid-template-areas: 
-    "parent1 back parent2 clear"
+    "back clear clear clear"
     "seven eight nine subtract"
     "four five six add"
     "one two three multiply"
-    "decimal zero divide equals";
-  grid-template-rows: auto;
-  height: fit-content;
+    "parent1 decimal parent2 divide"
+    "zero zero equals equals";
 }
 
 .calculator {
